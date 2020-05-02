@@ -72,13 +72,3 @@ def delete():
 if __name__ == '__main__':
     app.run()
 
-'''
-mes = {
-    'session_id': request.json['session_id'],
-    'message_id': request.json['message_id'],
-    'participants': request.json['participants'],
-    'content': request.json['content']
-}
-messages.append(mes)
-return jsonify({'mes': mes}), 201
-'''
