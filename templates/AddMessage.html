@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add message</title>
+
+</head>
+<body>
+     <h1>Add message</h1>
+
+
+    <h4>number message:  {{count}}</h4>
+    <h4>applicationId:  {{data.applicationId}}</h4>
+      <h4>  content:    {{data.content}}</h4>
+
+    <ul>
+        {% for msg in data.participants %}
+        <li>{{ msg }}</li>
+        {% endfor %}
+    </ul>
+    <form method="post">
+        applicationId
+        <input type="text" name="applicationId" /><br><br>
+        content
+        <input type="text" name="content" /><br><br>
+        participants
+        <input type="text" name="participants1" />
+        <input type="text" name="participants2" />
+        <input type="text" name="participants3" />
+        <input type="text" name="participants4" /><br><br>
+
+        <input type="submit" value="Submit" />
+    </form>
+
+</body>
+</html>
