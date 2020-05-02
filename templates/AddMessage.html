@@ -7,20 +7,18 @@
 </head>
 <body>
      <h1>Add message</h1>
-
-
-    <h4>number message:  {{count}}</h4>
-    <h4>applicationId:  {{data.applicationId}}</h4>
-      <h4>  content:    {{data.content}}</h4>
-
     <ul>
         {% for msg in data.participants %}
         <li>{{ msg }}</li>
         {% endfor %}
     </ul>
     <form method="post">
-        applicationId
+        application id
         <input type="text" name="applicationId" /><br><br>
+        session id
+        <input type="text" name="sessionId" /><br><br>
+        message id
+        <input type="text" name="messageId" /><br><br>
         content
         <input type="text" name="content" /><br><br>
         participants
